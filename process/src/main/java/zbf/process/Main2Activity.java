@@ -10,6 +10,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import zbf.process.service.MyService;
+
 /**
  * android 多进程测试Demo
  */
@@ -49,6 +51,7 @@ public class Main2Activity extends AppCompatActivity
 
     private void initView()
     {
+        final Intent intent = new Intent(Main2Activity.this,MyService.class);
         tv1 = (TextView) findViewById(R.id.tv1);
         tv2 = (TextView) findViewById(R.id.tv2);
         tv3 = (TextView) findViewById(R.id.tv3);
@@ -61,10 +64,18 @@ public class Main2Activity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                startActivity(new Intent(Main2Activity.this, Main2Activity.class));
+                startService(intent);
             }
         });
-
+        bt.setOnLongClickListener(new View.OnLongClickListener()
+        {
+            @Override
+            public boolean onLongClick(View view)
+            {
+                stopService(intent);
+                return true;
+            }
+        });
 
     }
 }

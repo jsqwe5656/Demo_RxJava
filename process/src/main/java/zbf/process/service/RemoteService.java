@@ -1,4 +1,4 @@
-package zbf.process;
+package zbf.process.service;
 
 import android.app.Service;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.os.IBinder;
 import android.os.Process;
 import android.os.RemoteException;
 import android.support.annotation.Nullable;
+
+import zbf.process.IRemoteService;
 
 /**
  *
