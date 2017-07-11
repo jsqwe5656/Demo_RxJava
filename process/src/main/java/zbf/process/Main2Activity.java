@@ -18,7 +18,7 @@ import zbf.process.service.MyService;
 public class Main2Activity extends AppCompatActivity
 {
     private TextView tv1, tv2, tv3, tv4, tv5, tv6;
-    private Button bt;
+    private Button bt,btn_bind,btn_unbind;
     private List<String> list;
 
 
@@ -77,5 +77,23 @@ public class Main2Activity extends AppCompatActivity
             }
         });
 
+        btn_bind = (Button) findViewById(R.id.btn_bind);
+        btn_bind.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+
+            }
+        });
+        btn_unbind = (Button) findViewById(R.id.btn_unbind);
+        btn_unbind.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+
+            }
+        });
     }
 }
