@@ -1,4 +1,4 @@
-package zbf.process;
+package zbf.process.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import zbf.process.MyUtil;
+import zbf.process.R;
 import zbf.process.service.MyService;
 
 /**
@@ -83,16 +85,7 @@ public class Main2Activity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-
-            }
-        });
-        btn_unbind = (Button) findViewById(R.id.btn_unbind);
-        btn_unbind.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-
+                startActivity(new Intent(Main2Activity.this,BindingActivity.class));
             }
         });
     }

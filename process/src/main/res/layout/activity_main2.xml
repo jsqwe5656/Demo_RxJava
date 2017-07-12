@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="zbf.process.MainActivity">
+    tools:context="zbf.process.activity.MainActivity">
 
     <TextView
         android:id="@+id/tv1"
@@ -54,12 +54,7 @@
         android:id="@+id/btn_bind"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BindService"/>
+        android:text="jumpBindActivity"/>
 
-    <Button
-        android:id="@+id/btn_unbind"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="UnBindService"/>
 
 </LinearLayout>

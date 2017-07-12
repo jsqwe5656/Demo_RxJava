@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:process=":a">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Main2Activity"
+            android:name=".activity.Main2Activity"
             android:process=":b"/>
 
         <service
@@ -41,6 +41,18 @@
             android:enabled="true"
             android:exported="true">
         </service>
+
+        <activity android:name=".activity.BindingActivity">
+        </activity>
+
+        <service
+            android:name=".service.MessengerService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <activity android:name=".activity.ActivityMessenger">
+        </activity>
     </application>
 
 </manifest>

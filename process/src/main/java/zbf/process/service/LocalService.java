@@ -17,7 +17,7 @@ public class LocalService extends Service
 
     public class LocalBinder extends Binder
     {
-        LocalService getService()
+        public LocalService getService()
         {
             //返回这个实例让客户端可以访问公用方法
             return LocalService.this;

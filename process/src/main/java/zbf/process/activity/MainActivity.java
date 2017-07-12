@@ -1,4 +1,4 @@
-package zbf.process;
+package zbf.process.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,10 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import zbf.process.MyUtil;
+import zbf.process.R;
 
 /**
  * android 多进程测试Demo
