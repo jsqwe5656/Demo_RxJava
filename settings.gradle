@@ -1,1 +1,1 @@
-include ':app', ':zbf', ':process'
+include ':app', ':zbf', ':process', ':contentprovider'

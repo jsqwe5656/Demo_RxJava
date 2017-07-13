@@ -53,6 +53,8 @@
 
         <activity android:name=".activity.ActivityMessenger">
         </activity>
+        <activity android:name=".activity.BindAIDLActivity">
+        </activity>
     </application>
 
 </manifest>
