@@ -55,6 +55,8 @@
         </activity>
         <activity android:name=".activity.BindAIDLActivity">
         </activity>
+        <activity android:name=".activity.AsyncActivity">
+        </activity>
     </application>
 
 </manifest>

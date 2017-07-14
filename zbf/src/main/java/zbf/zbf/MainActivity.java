@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements LoginView
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         viewInit();
-
+        
         presenter = new LoginPresenterImpl(this);
     }
 
